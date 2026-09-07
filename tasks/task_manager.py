@@ -5,7 +5,7 @@ from scipy.stats import zscore
 from sklearn.utils import resample
 
 # Açıklama: CSV dosyasından veriyi pandas DataFrame olarak oku.
-# Input: "death_note_characters.csv"
+# Input: "tasks/death_note_characters.csv"
 # Output: pandas.DataFrame
 # Kolonlar örneği: ['name', 'iq', 'aggression', 'justice_score', 'city', 'is_suspect']
 def load_character_data(path: str) -> pd.DataFrame:
