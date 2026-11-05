@@ -24,8 +24,9 @@ def clean_column_names(df: pd.DataFrame) -> pd.DataFrame:
 def fill_missing_scores(df: pd.DataFrame, column: str) -> pd.DataFrame:
     pass
 
-# Açıklama: city sütununu one-hot encode et.
-# Input: "tokyo", "kyoto", "osaka"
+# Açıklama: city sütununu one-hot encode et. Önce şehir adlarını küçük harfe çevir ("Tokyo" → "tokyo").
+# Diğer sütunlar korunmalı, sadece city sütunu yeni sütunlara dönüşmeli.
+# Input: "Tokyo", "Kyoto", "Osaka"
 # Output: city_tokyo, city_kyoto, city_osaka sütunları
 def encode_city_column(df: pd.DataFrame) -> pd.DataFrame:
     pass
